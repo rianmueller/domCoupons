@@ -43,18 +43,18 @@ item2.appendChild(price2Box);
 var discount3Box = document.createElement('button');
 discount3Box.id = 'discount3';
 discount3Box.innerHTML = '50% OFF Axe body soap!';
-document.querySelector('.block3').appendChild(discount3Box);
+document.getElementsByClassName('block3')[0].appendChild(discount3Box);
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
 
-document.querySelector('.item').innerHTML = 'Orange Chicken';
+document.getElementsByClassName('item')[0].innerHTML = 'Orange Chicken';
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
 
 var discountBox = document.createElement('button');
 discountBox.id = 'discount';
 discountBox.innerHTML = 'Free T-shirt and fortune cookie with purchase!';
-document.querySelector('.item').appendChild(discountBox);
+document.getElementsByClassName('item')[0].appendChild(discountBox);
 
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
 
