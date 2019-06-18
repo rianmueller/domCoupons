@@ -73,7 +73,17 @@ document.getElementsByClassName('social')[5].appendChild(brandBox);
 
 //14. Create a div element with the class of 'item' and give it a content of Electronstatic Headphones. Append this element in the headphones section. 
 
+var itemBox = document.createElement('div');
+itemBox.className = 'item';
+itemBox.innerHTML = 'Electronstatic Headphones';
+document.getElementsByClassName('social')[5].appendChild(itemBox);
+
 //15. Create a div element with the class of 'price' and give it a content of $18,000. Append this element in the headphones section.
+
+var priceBox = document.createElement('div');
+priceBox.className = 'price';
+priceBox.innerHTML = '$18,000';
+document.getElementsByClassName('social')[5].appendChild(priceBox);
 
 //16. Create a button element with the class of 'discount' and give it a content of Free Barry Manilow CD with purchase! Append this element in the headphones section.
 
