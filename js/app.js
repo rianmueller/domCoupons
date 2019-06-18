@@ -118,7 +118,7 @@ document.getElementsByClassName('item')[4].innerHTML = 'Poppin\' Jalapeno Dorito
 
 document.getElementsByClassName('price')[4].innerHTML = '$7.77';
 
-document.getElementsByClassName('discount')[3].innerHTML = '33% OFF any 6 pack Budweiser Bud Light';;
+document.getElementsByClassName('discount')[3].innerHTML = '33% OFF any 6 pack Budweiser Bud Light';
 
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
@@ -126,5 +126,58 @@ document.getElementsByClassName('discount')[3].innerHTML = '33% OFF any 6 pack B
 //div.price = Priceless
 // button.discount = No Discounts. This cutie is worth every penny!
 
+document.getElementsByClassName('brand')[5].innerHTML = 'Any Dog Breeder';
+
+document.getElementsByClassName('item')[5].innerHTML = 'Baby Buggy';
+
+document.getElementsByClassName('price')[5].innerHTML = 'Priceless';
+
+document.getElementsByClassName('discount')[4].innerHTML = 'No Discounts. This cutie is worth every penny!';
+
 //Final Boss 
 //Create your own product for the last three sections.
+
+document.getElementsByClassName('brand')[6].innerHTML = 'Gray Buckets';
+document.getElementsByClassName('item')[6].innerHTML = 'Grocery Bucket';
+document.getElementsByClassName('price')[6].innerHTML = '$19.99';
+document.getElementsByClassName('discount')[5].innerHTML = '0% off with purchase of both other buckets on the right!';
+
+var middleBrandBox = document.createElement('div');
+middleBrandBox.className = 'brand';
+middleBrandBox.innerHTML = 'Gray Buckets, Inc.';
+document.getElementsByClassName('social')[10].appendChild(middleBrandBox);
+
+var middleItemBox = document.createElement('div');
+middleItemBox.className = 'item';
+middleItemBox.innerHTML = 'Funny Shapes Bucket';
+document.getElementsByClassName('social')[10].appendChild(middleItemBox);
+
+var middlePriceBox = document.createElement('div');
+middlePriceBox.className = 'price';
+middlePriceBox.innerHTML = '$29.99';
+document.getElementsByClassName('social')[10].appendChild(middlePriceBox);
+
+var middleButtonBox = document.createElement('button');
+middleButtonBox.className = 'discount';
+middleButtonBox.innerHTML = '0% off with purchase of both other buckets on either side!';
+document.getElementsByClassName('social')[10].appendChild(middleButtonBox);
+
+var rightBrandBox = document.createElement('div');
+rightBrandBox.className = 'brand';
+rightBrandBox.innerHTML = 'Gray Buckets, Ltd.';
+document.getElementsByClassName('social')[11].appendChild(rightBrandBox);
+
+var rightItemBox = document.createElement('div');
+rightItemBox.className = 'item';
+rightItemBox.innerHTML = 'Clip Art Bucket';
+document.getElementsByClassName('social')[11].appendChild(rightItemBox);
+
+var rightPriceBox = document.createElement('div');
+rightPriceBox.className = 'price';
+rightPriceBox.innerHTML = '$499.99';
+document.getElementsByClassName('social')[11].appendChild(rightPriceBox);
+
+var rightButtonBox = document.createElement('button');
+rightButtonBox.className = 'discount';
+rightButtonBox.innerHTML = '0% off with purchase of both other buckets on the left!';
+document.getElementsByClassName('social')[11].appendChild(rightButtonBox);
