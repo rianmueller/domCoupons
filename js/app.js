@@ -98,6 +98,14 @@ document.getElementsByClassName('social')[5].appendChild(discount3Box);
 //div.price = $21.99
 // button.discount = Free knee-high tube socks with purchase!
 
+document.getElementsByClassName('brand')[3].innerHTML = 'H&M';
+
+document.getElementsByClassName('item')[3].innerHTML = 'Unicorn-Head Slippers';
+
+document.getElementsByClassName('price')[3].innerHTML = '$21.99';
+
+document.getElementsByClassName('discount')[2].innerHTML = 'Free knee-high tube socks with purchase!';
+
 //18. For the Doritos, change the contents for each element to the following:
 //div.brand = Frito Lay
 //div.item =  Poppin' Jalapeno Doritos
