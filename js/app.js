@@ -112,6 +112,14 @@ document.getElementsByClassName('discount')[2].innerHTML = 'Free knee-high tube 
 //div.price = $7.77
 // button.discount = 33% OFF any 6 pack Budweiser or Bud Light.
 
+document.getElementsByClassName('brand')[4].innerHTML = 'Frito Lay';
+
+document.getElementsByClassName('item')[4].innerHTML = 'Poppin\' Jalapeno Doritos';
+
+document.getElementsByClassName('price')[4].innerHTML = '$7.77';
+
+document.getElementsByClassName('discount')[3].innerHTML = '33% OFF any 6 pack Budweiser Bud Light';;
+
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
 //div.item =  Baby Puggy
