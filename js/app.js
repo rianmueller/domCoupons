@@ -87,6 +87,11 @@ document.getElementsByClassName('social')[5].appendChild(priceBox);
 
 //16. Create a button element with the class of 'discount' and give it a content of Free Barry Manilow CD with purchase! Append this element in the headphones section.
 
+var discount3Box = document.createElement('div');
+discount3Box.className = 'discount';
+discount3Box.innerHTML = 'Free Barry Manilow CD with purchase!';
+document.getElementsByClassName('social')[5].appendChild(discount3Box);
+
 //17. For the Unicorn Slippers, change the contents for each element to the following: 
 //div.brand = H&M
 //div.item =  Unicorn-Head Slippers
