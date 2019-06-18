@@ -4,7 +4,7 @@
 
 //1. Target the h3 element with the id of 'disclaimer' and change the contents to the follow finePrint variable.
 
-var finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
+let finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
 
 disclaimer.innerHTML = finePrint;
 
@@ -26,71 +26,80 @@ discount1.innerHTML = 'Free fries with purchase!';
 
 //6. Create a div element with the id of 'item2' and update the content to Hendrick's Gin. Append this element to William Grand & Sons div.
 
-var item2Box = document.createElement('div');
+let item2Box = document.createElement('div');
 item2Box.id = 'item2';
 item2Box.innerHTML = 'Hendrick\'s Gin';
 brand2.appendChild(item2Box);
 
 //7. Create a div element with the id of 'price2' and update the content to $34.99. Append this element to the Hendrick's Gin div.
 
-var price2Box = document.createElement('div');
+let price2Box = document.createElement('div');
 price2Box.id = 'price2';
 price2Box.innerHTML = '$34.99';
 item2.appendChild(price2Box);
 
 //8. Create a button element with the id of 'discount3' and give it a content of 50% OFF Axe body soap!. Append this element to the appropriate div class 'block3.
 
-var discount3Box = document.createElement('button');
+let block1Class = document.getElementsByClassName('block1');
+let block2Class = document.getElementsByClassName('block2');
+let block3Class = document.getElementsByClassName('block3');
+
+let discount3Box = document.createElement('button');
 discount3Box.id = 'discount3';
 discount3Box.innerHTML = '50% OFF Axe body soap!';
-document.getElementsByClassName('block3')[0].appendChild(discount3Box);
+block3Class[0].appendChild(discount3Box);
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
 
-document.getElementsByClassName('item')[0].innerHTML = 'Orange Chicken';
+let itemClass = document.getElementsByClassName('item');
+itemClass[0].innerHTML = 'Orange Chicken';
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
 
-var discountBox = document.createElement('button');
-discountBox.id = 'discount';
+let discountBox = document.createElement('button');
+discountBox.className = 'discount';
 discountBox.innerHTML = 'Free T-shirt and fortune cookie with purchase!';
-document.getElementsByClassName('item')[0].appendChild(discountBox);
+block1Class[1].appendChild(discountBox);
 
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
 
-document.getElementsByClassName('brand')[1].innerHTML = 'Uniqlo';
+let brandClass = document.getElementsByClassName('brand')
+brandClass[1].innerHTML = 'Uniqlo';
 
 //12. Target the div element with the class of 'price' for the red hoodie section and update the content to 10,000. 
 
-document.getElementsByClassName('price')[1].innerHTML = '10,000';
+let priceClass = document.getElementsByClassName('price')
+priceClass[1].innerHTML = '¥10,000';
 
 //13. Create a div element with the class of 'brand' and give it a content of Hifiman Shangri-La. Append this element in the headphones section. 
 
-var brandBox = document.createElement('div');
+//let socialClass = document.getElementsByClassName('social');
+
+let brandBox = document.createElement('div');
 brandBox.className = 'brand';
 brandBox.innerHTML = 'Hifiman Shangri-La';
-document.getElementsByClassName('social')[5].appendChild(brandBox);
+block3Class[1].appendChild(brandBox);
 
 //14. Create a div element with the class of 'item' and give it a content of Electronstatic Headphones. Append this element in the headphones section. 
 
-var itemBox = document.createElement('div');
+let itemBox = document.createElement('div');
 itemBox.className = 'item';
 itemBox.innerHTML = 'Electronstatic Headphones';
-document.getElementsByClassName('social')[5].appendChild(itemBox);
+block3Class[1].appendChild(itemBox);
 
 //15. Create a div element with the class of 'price' and give it a content of $18,000. Append this element in the headphones section.
 
-var priceBox = document.createElement('div');
+let priceBox = document.createElement('div');
 priceBox.className = 'price';
 priceBox.innerHTML = '$18,000';
-document.getElementsByClassName('social')[5].appendChild(priceBox);
+block3Class[1].appendChild(priceBox);
 
 //16. Create a button element with the class of 'discount' and give it a content of Free Barry Manilow CD with purchase! Append this element in the headphones section.
 
-var discount3Box = document.createElement('div');
-discount3Box.className = 'discount';
-discount3Box.innerHTML = 'Free Barry Manilow CD with purchase!';
-document.getElementsByClassName('social')[5].appendChild(discount3Box);
+let discount4Box = document.createElement('button');
+discount4Box.className = 'discount';
+discount4Box.innerHTML = 'Free Barry Manilow CD with purchase!';
+block3Class[1].appendChild(discount4Box);
 
 //17. For the Unicorn Slippers, change the contents for each element to the following: 
 //div.brand = H&M
@@ -98,13 +107,11 @@ document.getElementsByClassName('social')[5].appendChild(discount3Box);
 //div.price = $21.99
 // button.discount = Free knee-high tube socks with purchase!
 
-document.getElementsByClassName('brand')[3].innerHTML = 'H&M';
-
-document.getElementsByClassName('item')[3].innerHTML = 'Unicorn-Head Slippers';
-
-document.getElementsByClassName('price')[3].innerHTML = '$21.99';
-
-document.getElementsByClassName('discount')[2].innerHTML = 'Free knee-high tube socks with purchase!';
+brandClass[3].innerHTML = 'H&M';
+itemClass[3].innerHTML = 'Unicorn-Head Slippers';
+priceClass[3].innerHTML = '$21.99';
+let discountClass = document.getElementsByClassName('discount');
+discountClass[3].innerHTML = 'Free knee-high tube socks with purchase!';
 
 //18. For the Doritos, change the contents for each element to the following:
 //div.brand = Frito Lay
@@ -112,13 +119,10 @@ document.getElementsByClassName('discount')[2].innerHTML = 'Free knee-high tube 
 //div.price = $7.77
 // button.discount = 33% OFF any 6 pack Budweiser or Bud Light.
 
-document.getElementsByClassName('brand')[4].innerHTML = 'Frito Lay';
-
-document.getElementsByClassName('item')[4].innerHTML = 'Poppin\' Jalapeno Doritos';
-
-document.getElementsByClassName('price')[4].innerHTML = '$7.77';
-
-document.getElementsByClassName('discount')[3].innerHTML = '33% OFF any 6 pack Budweiser Bud Light';
+brandClass[4].innerHTML = 'Frito Lay';
+itemClass[4].innerHTML = 'Poppin\' Jalapeno Doritos';
+priceClass[4].innerHTML = '$7.77';
+discountClass[4].innerHTML = '33% OFF any 6 pack Budweiser Bud Light';
 
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
@@ -126,58 +130,55 @@ document.getElementsByClassName('discount')[3].innerHTML = '33% OFF any 6 pack B
 //div.price = Priceless
 // button.discount = No Discounts. This cutie is worth every penny!
 
-document.getElementsByClassName('brand')[5].innerHTML = 'Any Dog Breeder';
-
-document.getElementsByClassName('item')[5].innerHTML = 'Baby Buggy';
-
-document.getElementsByClassName('price')[5].innerHTML = 'Priceless';
-
-document.getElementsByClassName('discount')[4].innerHTML = 'No Discounts. This cutie is worth every penny!';
+brandClass[5].innerHTML = 'Any Dog Breeder';
+itemClass[5].innerHTML = 'Baby Buggy';
+priceClass[5].innerHTML = 'Priceless';
+discountClass[5].innerHTML = 'No Discounts. This cutie is worth every penny!';
 
 //Final Boss 
 //Create your own product for the last three sections.
 
-document.getElementsByClassName('brand')[6].innerHTML = 'Gray Buckets';
-document.getElementsByClassName('item')[6].innerHTML = 'Grocery Bucket';
-document.getElementsByClassName('price')[6].innerHTML = '$19.99';
-document.getElementsByClassName('discount')[5].innerHTML = '0% off with purchase of both other buckets on the right!';
+brandClass[6].innerHTML = 'Gray Buckets';
+itemClass[6].innerHTML = 'Grocery Bucket';
+priceClass[6].innerHTML = '$19.99';
+discountClass[6].innerHTML = '0% off with purchase of both other buckets on the right!';
 
-var middleBrandBox = document.createElement('div');
+let middleBrandBox = document.createElement('div');
 middleBrandBox.className = 'brand';
 middleBrandBox.innerHTML = 'Gray Buckets, Inc.';
-document.getElementsByClassName('social')[10].appendChild(middleBrandBox);
+block2Class[3].appendChild(middleBrandBox);
 
-var middleItemBox = document.createElement('div');
+let middleItemBox = document.createElement('div');
 middleItemBox.className = 'item';
 middleItemBox.innerHTML = 'Funny Shapes Bucket';
-document.getElementsByClassName('social')[10].appendChild(middleItemBox);
+block2Class[3].appendChild(middleItemBox);
 
-var middlePriceBox = document.createElement('div');
+let middlePriceBox = document.createElement('div');
 middlePriceBox.className = 'price';
 middlePriceBox.innerHTML = '$29.99';
-document.getElementsByClassName('social')[10].appendChild(middlePriceBox);
+block2Class[3].appendChild(middlePriceBox);
 
-var middleButtonBox = document.createElement('button');
+let middleButtonBox = document.createElement('button');
 middleButtonBox.className = 'discount';
 middleButtonBox.innerHTML = '0% off with purchase of both other buckets on either side!';
-document.getElementsByClassName('social')[10].appendChild(middleButtonBox);
+block2Class[3].appendChild(middleButtonBox);
 
-var rightBrandBox = document.createElement('div');
+let rightBrandBox = document.createElement('div');
 rightBrandBox.className = 'brand';
 rightBrandBox.innerHTML = 'Gray Buckets, Ltd.';
-document.getElementsByClassName('social')[11].appendChild(rightBrandBox);
+block3Class[3].appendChild(rightBrandBox);
 
-var rightItemBox = document.createElement('div');
+let rightItemBox = document.createElement('div');
 rightItemBox.className = 'item';
 rightItemBox.innerHTML = 'Clip Art Bucket';
-document.getElementsByClassName('social')[11].appendChild(rightItemBox);
+block3Class[3].appendChild(rightItemBox);
 
-var rightPriceBox = document.createElement('div');
+let rightPriceBox = document.createElement('div');
 rightPriceBox.className = 'price';
 rightPriceBox.innerHTML = '$499.99';
-document.getElementsByClassName('social')[11].appendChild(rightPriceBox);
+block3Class[3].appendChild(rightPriceBox);
 
-var rightButtonBox = document.createElement('button');
+let rightButtonBox = document.createElement('button');
 rightButtonBox.className = 'discount';
 rightButtonBox.innerHTML = '0% off with purchase of both other buckets on the left!';
-document.getElementsByClassName('social')[11].appendChild(rightButtonBox);
+block3Class[3].appendChild(rightButtonBox);
